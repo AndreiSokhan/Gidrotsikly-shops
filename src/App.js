@@ -1,11 +1,10 @@
-import SectionProduct from "./components/sectionProduct/SectionProduct";
+import SectionCategories from "./components/sectionCategories/SectionCategories.jsx";
 
 
 function App() {
     return (
         <div>
-            <SectionProduct/>
-            <></>
+            <SectionCategories />
         </div>
     );
 }
