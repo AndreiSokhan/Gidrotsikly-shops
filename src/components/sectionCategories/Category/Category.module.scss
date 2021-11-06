@@ -1,0 +1,54 @@
+@import './../../../sass/abstracts/vars.scss';
+
+.Category {
+   display: flex;
+   justify-content: space-between;
+   height: 130px;
+   width: 370px;
+   border: 1px solid silver;
+   border-radius: 3px;
+   padding: 0 20px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+
+   &:hover {
+      box-shadow: 3px 3px 20px 0px #32323240;
+      color: #1C62CD;
+   }
+}
+
+.description {
+   padding: 18px 0 14px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.title {
+   font-family: Barlow;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 23px;
+   line-height: 28px;
+}
+
+.link {
+   font-family: SF Pro Display;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 17px;
+   color: $lightext;
+}
+
+.wrapperImg {
+   display: flex;
+   align-items: center;
+}
+
+.img {
+   max-height: 100px;
+   max-width: 130px;
+}

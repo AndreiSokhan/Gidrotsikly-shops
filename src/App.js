@@ -1,11 +1,15 @@
+import { BrowserRouter } from "react-router-dom";
 import SectionCategories from "./components/sectionCategories/SectionCategories.jsx";
 
 
 function App() {
+    
     return (
+    <BrowserRouter>
         <div>
-            <SectionCategories />
+            <SectionCategories/>
         </div>
+    </BrowserRouter>
     );
 }
 
