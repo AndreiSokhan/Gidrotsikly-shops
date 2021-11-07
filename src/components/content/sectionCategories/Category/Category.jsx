@@ -3,8 +3,8 @@ import s from './Category.module.scss';
 
 function Category(props) {
    return (
-      <div className={s.Category}>
-         <div classname={s.description}>
+      <div className={s.category}>
+         <div className={s.description}>
             <h2 className={s.title}>{props.data.title}</h2>
             <NavLink to={props.data.link}>Подробнее</NavLink>
          </div>

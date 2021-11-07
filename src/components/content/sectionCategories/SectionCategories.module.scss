@@ -1,0 +1,9 @@
+
+
+.sectionCategories {
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(3, 370px);
+   gap: 30px;
+   margin: 80px 0;
+}
