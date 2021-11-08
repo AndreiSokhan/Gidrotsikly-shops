@@ -2,8 +2,6 @@ import s from "./SectionCategories.module.scss";
 import Category from "./Category/Category.jsx";
 
 
-
-
 function SectionCategories(props) {
 
    return (
@@ -17,6 +15,5 @@ function SectionCategories(props) {
       </div>
    );
 }
-
 
 export default SectionCategories;
