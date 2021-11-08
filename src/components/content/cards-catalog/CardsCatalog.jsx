@@ -1,6 +1,5 @@
-import s from './CardsCatalog.module.scss'
+import s from './CardsCatalog.module.scss';
 import ProductCard from './product-card/ProductCard';
-
 import img1 from './../../../assets/image/ProductCard/cq5dam.web.768.png';
 import img2 from './../../../assets/image/ProductCard/55a4f760715a1.png';
 import img3 from './../../../assets/image/ProductCard/s-l225.png';
@@ -14,7 +13,7 @@ function CardsCatalog() {
         img: img1,
         title:"Водонепроницаемый Рюкзак",
         span: "9 800 ₽",
-        label: "/"
+        label: null
     }
 
     const data2 = {
@@ -28,7 +27,7 @@ function CardsCatalog() {
         img: img3,
         title:"BRP Audio-Premium System",
         span: "68 000 ₽",
-        label: "/"
+        label: null
     }
 
     const data4 = {
