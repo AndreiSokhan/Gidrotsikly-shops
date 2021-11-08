@@ -1,4 +1,49 @@
-.header{
+.header {
    height: 152px;
    margin: 25px 0 78px;
+}
+
+.headerTop {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.headerNavList {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.headerNavItem {
+   margin-right: 50px;
+
+   &:last-child {
+      margin-right: 0px;
+   }
+}
+
+.logoImg{
+   margin: 0 98px 22px 92px;
+}
+
+.location {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 86px;
+}
+
+.rightBlockList{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.rightBlockItem {
+margin-right: 10px;
+
+&:last-child {
+   margin-right: 0px;
+}
 }

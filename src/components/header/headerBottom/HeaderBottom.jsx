@@ -1,3 +1,5 @@
+//блок Nav из Header буду выносить в общие 
+
 import s from './HeaderBottom.module.scss';
 import {NavLink} from "react-router-dom";
 
