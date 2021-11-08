@@ -1,0 +1,49 @@
+.ProductCard {
+    position: relative;
+    width: 271px;
+    height: 403px;
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2F3035;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px;
+        &:hover {
+            cursor: pointer;
+            box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+            border-radius: 3px;
+        }
+}
+
+.ProductImg {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.ProductTitle {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.ProductDesc {
+font-family: 'Barlow';
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+}
+

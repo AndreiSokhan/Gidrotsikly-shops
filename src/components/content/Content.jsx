@@ -1,3 +1,4 @@
+import CardsCatalog from "./cards-catalog/CardsCatalog";
 import s from "./Content.module.scss";
 import SectionCategories from "./sectionCategories/SectionCategories";
 
@@ -45,6 +46,8 @@ function Content(props) {
    return (
       <div className={s.content}>
          <SectionCategories data1={data1} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
+         {/*<SectionCategories/>*/}
+         <CardsCatalog/>
       </div>
    );
 }
