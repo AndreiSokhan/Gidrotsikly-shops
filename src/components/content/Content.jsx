@@ -11,6 +11,7 @@ import img6 from "./../../assets/image/categories-img/image-6.png"
 import SectionSale from "./sectionSale/SectionSale";
 
 
+
 function Content(props) {
 
    const data1 ={
