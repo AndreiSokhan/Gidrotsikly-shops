@@ -10,6 +10,7 @@ import img5 from "./../../assets/image/categories-img/image-5.png"
 import img6 from "./../../assets/image/categories-img/image-6.png"
 
 
+
 function Content(props) {
 
    const data1 ={

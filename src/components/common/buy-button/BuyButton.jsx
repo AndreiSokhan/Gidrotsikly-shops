@@ -1,12 +1,12 @@
 import s from './BuyButton.module.scss';
-import img from '../../../assets/image/BuyButton/buyButton.svg';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-function BuyButton(props) {
+function BuyButton() {
 
     return (
 
         <button className={s.BuyButton}>
-            <svg className={s.ButtonImg} src={img}></svg>
+            <ShoppingCartIcon className={s.img}/>
         </button>
 
     )
