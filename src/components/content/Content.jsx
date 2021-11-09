@@ -8,6 +8,7 @@ import img3 from "./../../assets/image/categories-img/image-3.png"
 import img4 from "./../../assets/image/categories-img/image-4.png"
 import img5 from "./../../assets/image/categories-img/image-5.png"
 import img6 from "./../../assets/image/categories-img/image-6.png"
+import SectionSale from "./sectionSale/SectionSale";
 
 
 function Content(props) {
@@ -45,6 +46,7 @@ function Content(props) {
 
    return (
       <div className={s.content}>
+         <SectionSale/>
          <SectionCategories data1={data1} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
          <CardsCatalog/>
       </div>
