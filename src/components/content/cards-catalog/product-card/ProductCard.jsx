@@ -2,6 +2,8 @@ import s from './ProductCard.module.scss';
 import Label from '../../../common/Label/Label';
 import BuyButton from '../../../common/buy-button/BuyButton';
 import NotAvailiable from '../../../common/not-availabile/NotAvailiable';
+import LikeButton from '../../../common/like-button/LikeButton';
+
 
 
 
@@ -11,6 +13,12 @@ function ProductCard (props) {
 
     return (
         <div className={s.ProductCard}>
+            <>
+        <div className={s.productLike}>
+            <LikeButton/>
+        </div>
+            </>
+
             {props.label ? <Label label={props.label}/> : null} 
             <img className={s.ProductImg} src={props.img} alt="product-img" />
             <h3 className={s.ProductTitle}>{props.title}</h3>
