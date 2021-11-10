@@ -3,10 +3,16 @@
    margin: 25px 0 78px;
 }
 
+.container {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1170px;
+}
+
 .headerTop {
+   margin-bottom: 20px;
    display: flex;
-   align-items: center;
-   justify-content: center;
+   justify-content: space-between;
 }
 
 .headerNavList {
@@ -15,7 +21,17 @@
    justify-content: center;
 }
 
+.navLink {
+   color: #2F3035;
+}
+
 .headerNavItem {
+   font-family: SF Pro Display, sans-serif;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 24px;
+   letter-spacing: 0em;
    margin-right: 50px;
 
    &:last-child {
@@ -23,27 +39,56 @@
    }
 }
 
-.logoImg{
-   margin: 0 98px 22px 92px;
-}
-
 .location {
    display: flex;
    align-items: center;
-   justify-content: center;
    margin-right: 86px;
 }
 
-.rightBlockList{
+.locationAdress {
+   font-family: SF Pro Display, sans-serif;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 24px;
+}
+
+.rightBlock {
+   display: flex;
+}
+
+.personalBlockList {
    display: flex;
    align-items: center;
    justify-content: center;
 }
 
-.rightBlockItem {
-margin-right: 10px;
+.personalBlockItem {
+   position: relative;
+   margin-right: 10px;
 
-&:last-child {
-   margin-right: 0px;
+   &:last-child {
+      margin-right: 0px;
+   }
 }
+
+.basketImg {
+   position: relative;
+}
+
+.number {
+   position: absolute;
+   bottom: -2px;
+   left: 24px;
+   font-family: SF Pro Display, sans-serif;
+   font-size: 10px;
+   line-height: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   color: #fff;
+   background-color: #1C62CD;
 }

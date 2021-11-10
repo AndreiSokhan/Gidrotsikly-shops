@@ -1,14 +1,14 @@
-import CardsCatalog from "./cards-catalog/CardsCatalog";
 import s from "./Content.module.scss";
-import SectionCategories from "./sectionCategories/SectionCategories";
-
-import img1 from "./../../assets/image/categories-img/image-1.png"
-import img2 from "./../../assets/image/categories-img/image-2.png"
-import img3 from "./../../assets/image/categories-img/image-3.png"
-import img4 from "./../../assets/image/categories-img/image-4.png"
-import img5 from "./../../assets/image/categories-img/image-5.png"
-import img6 from "./../../assets/image/categories-img/image-6.png"
+import img1 from "./../../assets/image/categories-img/image-1.png";
+import img2 from "./../../assets/image/categories-img/image-2.png";
+import img3 from "./../../assets/image/categories-img/image-3.png";
+import img4 from "./../../assets/image/categories-img/image-4.png";
+import img5 from "./../../assets/image/categories-img/image-5.png";
+import img6 from "./../../assets/image/categories-img/image-6.png";
 import SectionSale from "./sectionSale/SectionSale";
+import SectionSearch from "./sectionSearch/SectionSearch";
+import CardsCatalog from "./cards-catalog/CardsCatalog";
+import SectionCategories from "./sectionCategories/SectionCategories";
 
 
 
@@ -48,6 +48,7 @@ function Content(props) {
    return (
       <div className={s.content}>
          <SectionSale/>
+         <SectionSearch/>
          <SectionCategories data1={data1} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
          <CardsCatalog/>
       </div>

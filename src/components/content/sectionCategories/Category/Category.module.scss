@@ -32,6 +32,7 @@
    font-weight: bold;
    font-size: 23px;
    line-height: 28px;
+
 }
 
 .link {
@@ -41,6 +42,23 @@
    font-size: 14px;
    line-height: 17px;
    color: $lightext;
+   position: relative;
+
+   ::after {
+      content: "";
+      background-image: url(../../../../assets/image/categories-img/arrow.svg);
+      display: block;
+      background-repeat: no-repeat;
+      height: 9px;
+      width: 6px;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+   }
+
+   &:hover {
+      scale: 1, 2;
+   }
 }
 
 .wrapperImg {
