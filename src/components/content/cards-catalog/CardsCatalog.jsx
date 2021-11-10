@@ -11,7 +11,7 @@ function CardsCatalog() {
 
     const data1 = {
         img: img1,
-        title:"Водонепроницаемый Рюкзак",
+        title:"Водонепроницаемый рюкзак",
         span: "9 800 ₽",
         label: null,
         buyButton: true
@@ -39,8 +39,6 @@ function CardsCatalog() {
         label: "SALE",
         buyButton: false
     }
-
-
 
     return (
         <section className={s.CardsCatalog}>

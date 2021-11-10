@@ -21,7 +21,7 @@ function ProductCard (props) {
                 :
                 <>
                 <div>Нет в наличии</div>
-                <div>Сообщить о наличии! я люблю лесю</div>
+                <div>Сообщить о наличии!</div>
                 </>
             }
         </div>
