@@ -1,6 +1,7 @@
 import s from './ProductCard.module.scss';
 import Label from '../../../common/Label/Label';
 import BuyButton from '../../../common/buy-button/BuyButton';
+import NotAvailiable from '../../../common/not-availabile/NotAvailiable';
 
 
 
@@ -20,10 +21,15 @@ function ProductCard (props) {
                 </>
                 :
                 <>
-                <div>Нет в наличии</div>
-                <div>Сообщить о наличии!</div>
+                <NotAvailiable/>
                 </>
             }
+
+                <>
+                    <button className={s.ProductBtn}>
+                        <p className={s.ProductBtnText}>посмотреть товар</p>
+                    </button>
+                </>
         </div>
     );
 }

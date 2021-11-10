@@ -15,12 +15,12 @@
     flex-direction: column;
     align-items: center;
     padding-top: 52px;
-        &:hover {
-            cursor: pointer;
-            box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-            border-radius: 3px;
-        }
+    z-index: 1;
 }
+
+// .ProductCard .ShowProduct:hover {
+//     display: block;
+// }
 
 .ProductImg {
     object-fit: cover;
@@ -36,6 +36,7 @@
     line-height: 21px;
     max-width: 200px;
     text-align: center;
+    margin: 11px 0 15px 0;
 }
 
 .ProductDesc {
@@ -46,4 +47,39 @@ font-size: 30px;
 line-height: 36px;
 text-align: center;
 }
+
+.ProductBtn {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: 61px;
+    background: #FFFFFF;
+    opacity: 0.9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    z-index: 2;
+}
+
+    .ProductBtnText {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+    margin-top: 18px;
+    }
+
+    .ProductCard:hover {
+        cursor: pointer;
+        box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+        border-radius: 3px;
+        .ProductBtn {
+            display: block;
+        }
+    }
+
 

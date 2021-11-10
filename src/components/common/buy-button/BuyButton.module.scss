@@ -6,6 +6,12 @@ width: 60px;
 height: 40px;
 background: #1C62CD;
 border-radius: 10px 0px 0px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .img {
