@@ -1,5 +1,6 @@
 import s from "./SectionSale.module.scss";
 import SeleCard from "./saleCard/SaleCard";
+import SaleSlider from "./saleSlider/SaleSlider";
 
 
 
@@ -11,7 +12,7 @@ function SectionSale(props) {
    return (
       <div className={s.sectionSale}>
          <div className={s.container}>
-            
+            <SaleSlider/>
             <SeleCard title="Лодочный мотор Suzuki DF9.9BRS" specialOffer="Акция действует до" dataOffer="31.12.2021"/>
          </div>
       </div>
