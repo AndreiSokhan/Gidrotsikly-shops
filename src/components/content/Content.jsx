@@ -7,8 +7,8 @@ import img5 from "./../../assets/image/categories-img/image-5.png";
 import img6 from "./../../assets/image/categories-img/image-6.png";
 import SectionSale from "./sectionSale/SectionSale";
 import SectionSearch from "./sectionSearch/SectionSearch";
-import CardsCatalog from "./cards-catalog/CardsCatalog";
 import SectionCategories from "./sectionCategories/SectionCategories";
+import CardsPopular from "./cards-popular/CardsPopular";
 
 
 
@@ -50,7 +50,7 @@ function Content(props) {
          <SectionSale/>
          <SectionSearch/>
          <SectionCategories data1={data1} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
-         <CardsCatalog/>
+         <CardsPopular/>
       </div>
    );
 }

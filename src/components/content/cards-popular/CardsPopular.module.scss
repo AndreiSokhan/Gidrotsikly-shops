@@ -1,0 +1,17 @@
+.CardsPopular {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+}
+
+.title {
+font-family: 'Barlow', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 30px;
+color: #2F3035;
+margin-bottom: 25px;
+}
