@@ -20,7 +20,10 @@ function ProductCard (props) {
             </>
 
             {props.label ? <Label label={props.label}/> : null} 
+
+        
             <img className={s.ProductImg} src={props.img} alt="product-img" />
+        
             <h3 className={s.ProductTitle}>{props.title}</h3>
             {props.buyButton ?
                 <>
