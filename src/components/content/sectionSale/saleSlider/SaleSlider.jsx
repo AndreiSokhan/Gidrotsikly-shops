@@ -1,6 +1,7 @@
 
 import React, { Component } from "react";
 import Slider from "react-slick";
+import slide from "./../../../../assets/image/sale/banner.png";
 
 
 // это слайдер для sectionSale
@@ -8,42 +9,41 @@ import Slider from "react-slick";
 //пока не совсем понимаю как его можно переиспользовать, или стоит для остальных блоков нашего сайта создавать свое? буду спрашивать.
 
 
-      export default class SaleSlider extends Component {
-         render() {
-            const settings = {
-               dots: true,
-               infinite: true,
-               speed: 500,
-               slidesToShow: 1,
-               slidesToScroll: 1
-            };
-            return (
-               <div>
-               <h2> Single Item</h2>
-               <Slider {...settings}>
-                  <div>
-                     <h3>1</h3>
-                  </div>
-                  <div>
-                     <h3>2</h3>
-                  </div>
-                  <div>
-                     <h3>3</h3>
-                  </div>
-                  <div>
-                     <h3>4</h3>
-                  </div>
-                  <div>
-                     <h3>5</h3>
-                  </div>
-                  <div>
-                     <h3>6</h3>
-                  </div>
-               </Slider>
-               </div>
-            );
-         }
-         }
+export default class SimpleSlider extends Component {
+   render() {
+   const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+   };
+   return (
+      <div>
+         <Slider {...settings}>
+         <div className="s.sliderItem">
+            <img src={slide} alt="slide" />
+         </div>
+         <div>
+            <img src={slide} alt="slide" />
+         </div>
+         <div>
+            <img src={slide} alt="slide" />
+         </div>
+         <div>
+            <img src={slide} alt="slide" />
+         </div>
+         <div>
+            <img src={slide} alt="slide" />
+         </div>
+         <div>
+            <img src={slide} alt="slide" />
+         </div>
+         </Slider>
+      </div>
+   );
+   }
+}
 //}
 
 //export default SaleSlider;
