@@ -7,7 +7,7 @@ import LikeButton from '../../../common/like-button/LikeButton';
 
 
 
-//комонента самой карточки товара
+//комонента самой карточки товара, 1-ый уровень
 
 function ProductCard (props) {
 

@@ -9,6 +9,7 @@ import SectionSale from "./sectionSale/SectionSale";
 import SectionSearch from "./sectionSearch/SectionSearch";
 import SectionCategories from "./sectionCategories/SectionCategories";
 import CardsPopular from "./cards-popular/CardsPopular";
+import Banner from './banner/Banner';
 
 
 
@@ -51,6 +52,7 @@ function Content(props) {
          <SectionSearch/>
          <SectionCategories data1={data1} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
          <CardsPopular/>
+         <Banner bannerText="CКИДКИ на все запчасти до 70%"/>
       </div>
    );
 }
