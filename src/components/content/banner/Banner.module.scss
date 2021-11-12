@@ -1,33 +1,16 @@
 .Banner {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    width: 1170px;
     height: 165px;
     background: #1C62CD;
-    justify-items: center;
     align-items: center;
+    display: flex;
+    padding: 28px 123px 29px 71px;
+    justify-content: space-between;
 }
 
-// .imgFirst {
-//     grid-area: imgFirst;
-// }
-
-// .imgSecond {
-//     grid-area: imgSecond;
-// }
-
-// .text {
-//     grid-area: text;
-// }
-
-// .bannerBtn {
-//     grid-area: bannerBtn;
-// }
-
-// .Banner{
-//     grid-template-areas: img1 img2 text bannerBtn;
-// }
+.BannerImages{
+    margin-right: 46px;
+    display: flex;
+}
 
 
 .bannerBtn {

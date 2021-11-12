@@ -6,10 +6,12 @@ function Banner (props) {
 
     return (
         <div className={s.Banner}>
-            
+
+            <div className={s.BannerImages}>
                 <img className={s.imgFirst} src={img1} alt="banner-img"></img>
                 <img className={s.imgSecond} src={img2} alt="banner-img"></img>
-           
+            </div>
+
             <p className={s.text}>{props.bannerText}</p>
             <button className={s.bannerBtn}>посмотреть все</button>
         </div>
