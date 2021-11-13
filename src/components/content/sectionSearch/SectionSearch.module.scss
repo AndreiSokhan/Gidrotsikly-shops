@@ -1,6 +1,4 @@
-.sectionSearch {
-
-}
+.sectionSearch {}
 
 .container {
    margin: 0 auto;
@@ -8,7 +6,76 @@
    max-width: 1170px;
 }
 
+// стили для сладера
 .searchList {
-
    display: flex;
+   padding-bottom: 25px;
+}
+
+.searchItem {
+   display: flex;
+   align-items: center;
+   height: 47px;
+   padding: 0 26px;
+   border-radius: 5px;
+
+   &:hover {
+      background-color: #F0F0F4;
+   }
+}
+
+.searchLink {
+   font-family: SF Pro Display, sans-serif;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #2F3035;
+
+   &:hover {
+      font-weight: 700;
+   }
+
+}
+
+
+//стили для панели поиска
+.searchForm {
+   position: relative;
+}
+
+.searchInput {
+   font-family: SF Pro Display, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 19px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #656464;
+   width: 100%;
+   height: 50px;
+   padding-left: 20px;
+   background-color: #F0F0F4;
+   border: none;
+}
+
+.searchBtn {
+   position: absolute;
+   right: 0px;
+   width: 145px;
+   height: 50px;
+   border: none;
+   background-color: #1C62CD;
+   cursor: pointer;
+   border-radius: 3px;
+
+   font-family: SF Pro Displa, sans-serif;
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: 0.12em;
+   color: #FFF;
+   text-transform: uppercase;
 }

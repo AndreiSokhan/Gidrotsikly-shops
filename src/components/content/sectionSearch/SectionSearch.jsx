@@ -23,12 +23,15 @@ function SectionSearch(props) {
          <div className={s.container}>
             <div className={s.searchTypes}>
                <ul className={s.searchList}>
-                  <li className={s.searchItem}><NavLink className={s.navLink} to={data1.link}>Поиск по номеру</NavLink></li>
-                  <li className={s.searchItem}><NavLink className={s.navLink} to={data2.link}>Поиск по марке</NavLink></li>
-                  <li className={s.searchItem}><NavLink className={s.navLink} to={data3.link}>Поиск по названию товара</NavLink></li>
+                  <li className={s.searchItem}><NavLink className={s.searchLink} to={data1.link}>Поиск по номеру</NavLink></li>
+                  <li className={s.searchItem}><NavLink className={s.searchLink} to={data2.link}>Поиск по марке</NavLink></li>
+                  <li className={s.searchItem}><NavLink className={s.searchLink} to={data3.link}>Поиск по названию товара</NavLink></li>
                </ul>
             </div>
-            <form action=""></form>
+            <form className={s.searchForm} action="">
+               <input className={s.searchInput} type="search" placeholder="Введите марку "/>
+               <button className={s.searchBtn} type="submit">искать</button>
+            </form>
          </div>
       </div>
    );

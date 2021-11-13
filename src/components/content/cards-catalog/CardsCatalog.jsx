@@ -4,9 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import ProductCard from './product-card/ProductCard';
-import SwiperCore, {
-    Navigation
-} from 'swiper';
+import SwiperCore, { Navigation } from 'swiper';
 
 SwiperCore.use([Navigation]);
 
