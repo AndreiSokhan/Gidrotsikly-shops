@@ -7,7 +7,7 @@ function GreyButton(props) {
 
     
         <button className={s.GreyButton}>
-            {props.button}
+            показать еще
         </button>
         
             

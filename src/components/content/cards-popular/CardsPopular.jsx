@@ -6,6 +6,10 @@ import img1 from './../../../assets/image/ProductCard/cq5dam.web.768.png';
 import img2 from './../../../assets/image/ProductCard/55a4f760715a1.png';
 import img3 from './../../../assets/image/ProductCard/s-l225.png';
 import img4 from './../../../assets/image/ProductCard/s-l1600.png';
+import img5 from './../../../assets/image/ProductCard/1813210658_w640_h640_brp-audio-portativnaya-sistema-295100797.png';
+import img6 from './../../../assets/image/ProductCard/2178888.png';
+import img7 from './../../../assets/image/ProductCard/295100712.png';
+import img8 from './../../../assets/image/ProductCard/cq5dam.web.768.png';
 
 
 //секция с популярными товарами 
@@ -39,6 +43,31 @@ const data = [
         title:"Спасательное снаряжение",
         label: "SALE",
         buyButton: false
+    },
+    {
+        img: img5,
+        title:"BRP Audio-портативная система",
+        label: "SALE",
+        buyButton: false
+    },
+    {
+        img: img6,
+        title:"Garmin Echomap Plus 62cv",
+        span: "45 800 ₽",
+        label: null,
+        buyButton: true
+    },
+    {
+        img: img7,
+        title:"RF D.E.S.S.TM Key",
+        label: "SALE",
+        buyButton: false
+    },
+    {
+        img: img8,
+        title:"Мужской костюм 3мм",
+        label: null,
+        buyButton: false
     }
 ]
 
@@ -46,11 +75,11 @@ const data = [
     return (
 
         <section className={s.CardsPopular}>
-            <h2 className={s.title}>Популярные товары</h2>
+            <h2 className={s.title}>{props.title}</h2>
             <BasicTabs/>
-            {/* ProductSlider */}
             <CardsCatalog data={data}/>
-            <GreyButton button="Показать еще"/>
+            {/* <GreyButton button="Показать еще"/> */}
+            {props.GreyButton ? <GreyButton GreyButton={props.GreyButton}/> : null}
         </section>
         
             

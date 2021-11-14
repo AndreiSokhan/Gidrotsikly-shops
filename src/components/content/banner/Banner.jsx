@@ -7,6 +7,7 @@ import img2 from '../../../assets/image/banner/2018-Maverick-X3-X-rc-TURBO-R-Car
 function Banner (props) {
 
     return (
+        
         <div className={s.Banner}>
 
             <div className={s.BannerImages}>
@@ -17,6 +18,9 @@ function Banner (props) {
             <p className={s.text}>{props.bannerText}</p>
             <button className={s.bannerBtn}>посмотреть все</button>
         </div>
+    
+
+        
     );
 }
 

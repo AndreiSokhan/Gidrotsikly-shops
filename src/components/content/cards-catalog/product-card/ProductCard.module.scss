@@ -23,10 +23,13 @@
 // }
 
 
+.ImgBox {
+    width: 200px;
+}
+
 .ProductImg {
     object-fit: cover;
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 .ProductTitle {

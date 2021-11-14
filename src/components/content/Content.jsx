@@ -10,6 +10,7 @@ import SectionSearch from "./sectionSearch/SectionSearch";
 import SectionCategories from "./sectionCategories/SectionCategories";
 import CardsPopular from "./cards-popular/CardsPopular";
 import Banner from './banner/Banner';
+// import GreyButton from './../common/grey-button/GreyButton';
 
 
 
@@ -46,13 +47,19 @@ function Content(props) {
       link: "Engines"
    }
 
+   const data7 = {
+      GreyButton: true,
+   }
+
+
    return (
       <div className={s.content}>
          <SectionSale/>
          <SectionSearch/>
          <SectionCategories data1={data1} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
-         <CardsPopular/>
+         <CardsPopular GreyButton={data7} title={"Популярные товары"} />
          <Banner bannerText="CКИДКИ на все запчасти до 70%"/>
+         <CardsPopular title={"С этим товаром покупают"}/>
       </div>
    );
 }
