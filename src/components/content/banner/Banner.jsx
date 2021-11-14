@@ -2,6 +2,8 @@ import s from './Banner.module.scss';
 import img1 from '../../../assets/image/banner/CFMOTO-X6-EPS_blue2.png';
 import img2 from '../../../assets/image/banner/2018-Maverick-X3-X-rc-TURBO-R-Carbon-Black-and-Octane-Blue_3-4-front40722.png';
 
+//синий баннер со скидками
+
 function Banner (props) {
 
     return (

@@ -18,9 +18,7 @@ export default function SliderBlock(props) {
                 {props.data.map(item => {
                     return <SwiperSlide><ProductCard img={item.img} title={item.title} span={item.span} buyButton={item.buyButton} label={item.label}/></SwiperSlide>;
                 })}
-                {props.data.map(item => {
-                    return <SwiperSlide><ProductCard img={item.img} title={item.title} span={item.span} buyButton={item.buyButton} label={item.label}/></SwiperSlide>;
-                })}
+                
             </Swiper>
         </section>
     )
