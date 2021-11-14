@@ -1,0 +1,115 @@
+.slides {
+   width: 870px;
+
+   .slick-next {
+      right: 14px;
+      height: 28px;
+      width: 16px;
+      background: url('./../../../../assets/image/sale/arrow-r.svg') no-repeat;
+   }
+
+   .slick-next:before {
+      display: none;
+   }
+
+   .slick-prev {
+      left: 14px;
+      height: 28px;
+      width: 16px;
+      background: url('./../../../../assets/image/sale/arrow-l.svg') no-repeat;
+      z-index: 999;
+   }
+
+   .slick-prev:before {
+      display: none;
+   }
+
+   //стилизация точек
+   .slick-dots {
+      bottom: 40px;
+   }
+
+   .slick-dots li {
+      //как будто эти стили не используются
+      position: relative;
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      margin: 4.5px;
+      cursor: pointer;
+      //background-color: #fff;
+   }
+
+   .slick-dots li .slick-active {
+      position: relative;
+      display: block;
+      width: 11px;
+      height: 11px;
+      //background-color: #fff;
+      cursor: pointer;
+   }
+
+   .slick-dots li button {
+      //как будто эти стили не используются
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 11px;
+      height: 11px;
+      cursor: pointer;
+   }
+
+   .slick-dots li button:before {
+      font-size: 0;
+      border: 1 px solid #fff;
+      box-sizing: border-box;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 11 px;
+      height: 11 px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+   }
+
+
+
+
+
+
+   .slick-dots {
+      bottom: 0;
+   }
+
+   .slick-dots li {
+      //position: relative;
+      //display: inline-block;
+      //width: 20px;
+      //height: 20px;
+      //margin: 0.5px;
+      //padding: 0;
+      //cursor: pointer;
+   }
+
+
+
+   .slick-dots li button:before {
+      border: 1px solid #fff;
+      box-sizing: border-box;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 11px;
+      height: 11px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+   }
+
+   .slick-dots button {}
+}

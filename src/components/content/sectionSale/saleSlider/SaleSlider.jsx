@@ -2,13 +2,31 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import slide from "./../../../../assets/image/sale/banner.png";
+import "./SaleSlider.scss"
 
+// это Slick S для sectionSale
 
-// это слайдер для sectionSale
-//пока просто его подключил и никак не стилизовал и вообще ничего не делал
-//пока не совсем понимаю как его можно переиспользовать, или стоит для остальных блоков нашего сайта создавать свое? буду спрашивать.
+function SampleNextArrow(props) {
+   const { className, style, onClick } = props;
+   return (
+   <div
+      className={className}
+      style={{ ...style, display: "block", background: "" }}
+      onClick={onClick}
+   />
+   );
+}
 
-
+function SamplePrevArrow(props) {
+   const { className, style, onClick } = props;
+   return (
+   <div
+      className={className}
+      style={{ ...style, display: "block", background: "" }}
+      onClick={onClick}
+   />
+   );
+}
 export default class SimpleSlider extends Component {
    render() {
    const settings = {
@@ -16,12 +34,15 @@ export default class SimpleSlider extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      className: "slides",
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
    };
    return (
-      <div>
+      <>
          <Slider {...settings}>
-         <div className="s.sliderItem">
+         <div>
             <img src={slide} alt="slide" />
          </div>
          <div>
@@ -40,10 +61,7 @@ export default class SimpleSlider extends Component {
             <img src={slide} alt="slide" />
          </div>
          </Slider>
-      </div>
+      </>
    );
    }
 }
-//}
-
-//export default SaleSlider;
