@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import s from "./App.css";
 import Header from "./components/header/Header.jsx";
-import Content from "./components/content/Content.jsx";
+// import Content from "./components/content/Content.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Content2 from "./content2/Content2";
 

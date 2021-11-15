@@ -15,3 +15,51 @@
     max-width: 1140px;
 }
 
+.text {
+max-width: 235px;
+font-family: 'SF Pro Display', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+color: #2F3035;
+}
+
+.input {
+border: none;
+width: 201px;
+height: 33px;
+background: #FFFFFF;
+padding-left: 12px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.btn {
+background: #1C62CD;
+font-family: 'SF Pro Display',sans-serif;
+font-style: normal;
+font-size: 11px;
+line-height: 13px;
+text-align: center;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: #FFFFFF;
+width:109px;
+height:33px;
+cursor: pointer;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    align-items: center;
+}
