@@ -1,0 +1,32 @@
+.sorting {
+   margin-bottom: 48px;
+}
+
+.title {
+   font-family: SF Pro Display, sans-serif;
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 36px;
+   letter-spacing: 0em;
+   text-align: left;
+   margin-bottom: 20px;
+}
+
+.filtres {
+   display: flex;
+   justify-content: space-between;
+}
+
+.filtresList {
+   display: flex;
+   align-items: center;
+}
+
+.filtresItem {
+   margin-right: 15px;
+}
+
+.rightBlock{
+   display: flex;
+}
