@@ -4,6 +4,7 @@ import Sorting from "./sorting/Sorting";
 import Main from "./main/Main";
 
 
+
 //import img1 from "./../../assets/image/categories-img/image-1.png";
 //import img2 from "./../../assets/image/categories-img/image-2.png";
 //import img3 from "./../../assets/image/categories-img/image-3.png";
