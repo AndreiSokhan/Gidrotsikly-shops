@@ -24,9 +24,49 @@
 }
 
 .filtresItem {
-   margin-right: 15px;
+   margin-right: 10px;
+
 }
 
-.rightBlock{
+.searchLink {
+   background-color: #F0F0F4;
+   padding: 0 24px;
+   height: 25px;
+   border-radius: 3px;
+   cursor: default;
    display: flex;
+   align-items: center;
+
+   font-family: SF Pro Display, sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 17px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #2F3035;
+}
+
+.rightBlock {
+   display: flex;
+}
+
+.dropDownList {
+   height: 34px;
+   width: 178px;
+   margin-right: 34px;
+   padding: 0 20px;
+   border: 1.5px solid #D7D9DF;
+   color: #D7D9DF;
+
+   font-family: SF Pro Display, sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 17px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #2F3035;
+
+
 }
