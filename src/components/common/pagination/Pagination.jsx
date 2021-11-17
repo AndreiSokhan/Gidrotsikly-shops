@@ -1,14 +1,12 @@
+import s from "./Pagination.module.scss"
 import * as React from 'react';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
-export default function PaginationOutlined() {
+export default function BasicPagination() {
    return (
-      <Stack spacing={10}>
-         <Pagination count={10} variant="outlined" />
-         {/*<Pagination count={10} variant="outlined" color="primary" />
-         <Pagination count={10} variant="outlined" color="secondary" />*/}
-         <Pagination count={10} variant="outlined" disabled />
+      <Stack spacing={2}>
+      <Pagination className={s.pagination} count={11}  shape="rounded" hidePrevButton hideNextButton variant="outlined" color="primary"/>
       </Stack>
    );
 }

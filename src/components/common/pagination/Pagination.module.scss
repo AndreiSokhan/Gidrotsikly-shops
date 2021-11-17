@@ -1,3 +1,40 @@
-.MuiButtonBase-root {
-   display: none;
+.pagination {
+   margin: 70px 0 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #1C62CD;
 }
+
+.pagination ul {}
+
+.pagination li {}
+
+.pagination button {
+   border: none;
+   border-radius: 0px;
+   font-family: Barlow, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 22px;
+   letter-spacing: 0em;
+   text-align: left;
+
+   color: #C4C4C4;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   -ms-border-radius: 0px;
+   -o-border-radius: 0px;
+}
+
+
+//.pagination span {
+//   color: #1C62CD;
+//   border: 2px solid #1C62CD;
+//   background-color: #fff;
+//}
+
+//.pagination button .active {
+//   border: 2px solid;
+//}

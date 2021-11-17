@@ -2,7 +2,7 @@ import s from "./Content2.module.scss";
 import BreadCrumbs from "../components/common/bread-crumbs/BreadCrumbs";
 import Sorting from "./sorting/Sorting";
 import Main from "./main/Main";
-import { Pagination } from "@mui/material";
+import Pagination from "./../components/common/pagination/Pagination";
 
 
 
