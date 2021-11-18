@@ -1,5 +1,6 @@
 import s from './JetSkisCatalog.module.scss';
 import ProductCard from '../../../components/content/cards-catalog/product-card/ProductCard';
+import Pagination from "./../../../components/common/pagination/Pagination";
 import img1 from '../../images/first.jpg';
 import img2 from '../../images/second.jpg';
 import img3 from '../../images/third.jpg';
@@ -116,6 +117,7 @@ function JetSkisCatalog() {
          {data.map(item => {
             return <ProductCard img={item.img} title={item.title} span={item.span} buyButton={item.buyButton} label={item.label}/>
          })}
+         <Pagination/>
       </div>
 
    )

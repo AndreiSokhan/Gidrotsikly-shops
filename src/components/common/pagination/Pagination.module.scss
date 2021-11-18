@@ -1,11 +1,15 @@
-.pagination {
-   margin: 70px 0 100px;
-   display: flex;
-   align-items: center;
+.stack {
+   grid-column-start: 1;
+   grid-column-end: 4;
    justify-content: center;
+   margin: 40px 0 100px;
    color: #1C62CD;
 }
 
+.pagination ul {
+   display: flex;
+   justify-content: center;
+}
 
 .pagination button {
    border: none;
