@@ -2,9 +2,9 @@ import s from './Sidebar.module.scss';
 import { NavLink } from "react-router-dom";
 
 
-// главный блок с контентом на второй странице нашего проекта
+// блок с фильтрами на второй странице нашего проекта
 
-function Sidebar(props) {
+function Sidebar() {
 
    const data1 ={
       link: "Options"
@@ -16,11 +16,10 @@ function Sidebar(props) {
    return (
 
       <div className={s.sidebar}>
-         <div className={s.filter}>
-            <NavLink className={s.navLink} to={data1.link}>Параметры</NavLink>
-            <NavLink className={s.navLink} to={data2.link}>По марке</NavLink>
-         </div>
-         
+         <ul className={s.list}>
+            <li className={`${s.item} ${s.active}`}><NavLink className={s.link} to={data1.link}>Параметры</NavLink></li>
+            <li className={s.item}><NavLink className={s.link} to={data2.link}>По марке</NavLink></li>
+         </ul>
       </div>
 
    )
