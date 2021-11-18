@@ -5,8 +5,8 @@ import Stack from '@mui/material/Stack';
 
 export default function BasicPagination() {
    return (
-      <Stack spacing={2}>
-      <Pagination className={s.pagination} count={11}  shape="rounded" hidePrevButton hideNextButton variant="outlined"/>
+      <Stack className={s.stack} spacing={2}>
+      <Pagination className={s.pagination} count={11}  shape="rounded" hidePrevButton hideNextButton variant="outlined" />
       </Stack>
    );
 }
