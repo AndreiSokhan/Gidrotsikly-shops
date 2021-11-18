@@ -1,4 +1,5 @@
 import s from './Sidebar.module.scss';
+import CheckboxLabels from '../../../components/common/CheckboxLabels/CheckboxLabels';
 import { NavLink } from "react-router-dom";
 
 
@@ -16,10 +17,14 @@ function Sidebar() {
    return (
 
       <div className={s.sidebar}>
+
          <ul className={s.list}>
             <li className={`${s.item} ${s.active}`}><NavLink className={s.link} to={data1.link}>Параметры</NavLink></li>
             <li className={s.item}><NavLink className={s.link} to={data2.link}>По марке</NavLink></li>
          </ul>
+
+         <CheckboxLabels/>
+
       </div>
 
    )
