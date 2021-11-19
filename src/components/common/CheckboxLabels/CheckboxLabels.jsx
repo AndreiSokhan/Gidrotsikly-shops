@@ -9,7 +9,7 @@ import Checkbox from '@mui/material/Checkbox';
 export default function CheckboxLabels() {
     return (
         <FormGroup>
-            <FormControlLabel control={<Checkbox defaultChecked />} label="В наличие" />
+            <FormControlLabel control={<Checkbox defaultChecked />} label="Сюда значение будет передаваться props" />
         </FormGroup>
     );
 }

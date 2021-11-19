@@ -1,6 +1,8 @@
 import s from './Sidebar.module.scss';
-import CheckboxLabels from '../../../components/common/CheckboxLabels/CheckboxLabels';
+//import CheckboxLabels from '../../../components/common/CheckboxLabels/CheckboxLabels';
 import { NavLink } from "react-router-dom";
+//import { Accordion } from '@mui/material';
+import Filters from './filters/Filters';
 
 
 // блок с фильтрами на второй странице нашего проекта
@@ -22,9 +24,7 @@ function Sidebar() {
             <li className={`${s.item} ${s.active}`}><NavLink className={s.link} to={data1.link}>Параметры</NavLink></li>
             <li className={s.item}><NavLink className={s.link} to={data2.link}>По марке</NavLink></li>
          </ul>
-
-         <CheckboxLabels/>
-
+         <Filters/>
       </div>
 
    )
