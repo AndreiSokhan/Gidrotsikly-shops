@@ -1,22 +1,21 @@
 //import s from './Accordion.module.scss';
 //import {NavLink} from "react-router-dom";
 import * as React from 'react';
-import Filters from '@mui/material/Accordion';
+import Accordion  from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import s from './SaidbarFilters.module.scss';
 //ниже импорты компонент
 import CheckboxLabels from '../../../../components/common/CheckboxLabels/CheckboxLabels';
 import RadioButton from '../../../../components/common/radio-button/RadioButton';
 
 
-
-
 // полный блок аккардиона с чекбоксом ссылкой и поиском
 
 
-export default function Filters() {
+export default function SaidbarFilters() {
 
 
    //const data1 ={
@@ -29,6 +28,7 @@ export default function Filters() {
 
    return (
       <div>
+         
          <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
                <Typography>Наличие</Typography>
