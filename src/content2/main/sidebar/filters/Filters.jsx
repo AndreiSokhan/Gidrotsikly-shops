@@ -16,7 +16,7 @@ import RadioButton from '../../../../components/common/radio-button/RadioButton'
 // полный блок аккардиона с чекбоксом ссылкой и поиском
 
 
-export default function Filters() {
+ export default function Filters () {
 
 
    //const data1 ={
