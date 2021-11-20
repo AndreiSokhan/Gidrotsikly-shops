@@ -16,11 +16,7 @@ import PriceSlider from './../../../../components/common/price-slider/PriceSlide
 // полный блок аккардиона с чекбоксом ссылкой и поиском
 
 
-<<<<<<< HEAD:src/content2/main/sidebar/filters/Filters.jsx
- export default function Filters () {
-=======
 export default function SaidbarFilters() {
->>>>>>> 671ee12facbede5ccfb8850a08da1eb693fba6be:src/content2/main/sidebar/saidbarFilters/SaidbarFilters.jsx
 
 
    //const data1 ={
