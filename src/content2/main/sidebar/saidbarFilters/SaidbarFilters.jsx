@@ -10,6 +10,7 @@ import s from './SaidbarFilters.module.scss';
 //ниже импорты компонент
 import CheckboxLabels from '../../../../components/common/CheckboxLabels/CheckboxLabels';
 import RadioButton from '../../../../components/common/radio-button/RadioButton';
+import PriceSlider from './../../../../components/common/price-slider/PriceSlider';
 
 
 // полный блок аккардиона с чекбоксом ссылкой и поиском
@@ -55,14 +56,21 @@ export default function SaidbarFilters() {
             </AccordionSummary>
             <AccordionDetails>
                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  <PriceSlider/>
+                     <div className={s.price}>
+                        <div className={s.range}>
+                           <span className={s.value}>от<span className={s.cost}>100 000</span></span>
+                        </div>
+                        <div className={s.range}>
+                           <span className={s.value}>до<span className={s.cost}>500 000</span></span>
+                        </div>
+                     </div>
                </Typography>
             </AccordionDetails>
          </Accordion>
 
-{/*Сюда мы добавим компоненту в которой будет отображаться
-мощность, мощность двигателя и макс скорость чтобы не разбивать на 2 отдельных аккордиона */}
+         {/*Сюда мы добавим компоненту в которой будет отображаться
+         мощность, мощность двигателя и макс скорость чтобы не разбивать на 2 отдельных аккордиона */}
 
          <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
