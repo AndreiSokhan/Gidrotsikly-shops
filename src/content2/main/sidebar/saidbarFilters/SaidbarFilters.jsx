@@ -1,22 +1,26 @@
 //import s from './Accordion.module.scss';
 //import {NavLink} from "react-router-dom";
 import * as React from 'react';
-import Filters from '@mui/material/Accordion';
+import Accordion  from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import s from './SaidbarFilters.module.scss';
 //ниже импорты компонент
 import CheckboxLabels from '../../../../components/common/CheckboxLabels/CheckboxLabels';
 import RadioButton from '../../../../components/common/radio-button/RadioButton';
-
-
+import PriceSlider from './../../../../components/common/price-slider/PriceSlider';
 
 
 // полный блок аккардиона с чекбоксом ссылкой и поиском
 
 
+<<<<<<< HEAD:src/content2/main/sidebar/filters/Filters.jsx
  export default function Filters () {
+=======
+export default function SaidbarFilters() {
+>>>>>>> 671ee12facbede5ccfb8850a08da1eb693fba6be:src/content2/main/sidebar/saidbarFilters/SaidbarFilters.jsx
 
 
    //const data1 ={
@@ -29,6 +33,7 @@ import RadioButton from '../../../../components/common/radio-button/RadioButton'
 
    return (
       <div>
+         
          <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
                <Typography>Наличие</Typography>
@@ -55,14 +60,21 @@ import RadioButton from '../../../../components/common/radio-button/RadioButton'
             </AccordionSummary>
             <AccordionDetails>
                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  <PriceSlider/>
+                     <div className={s.price}>
+                        <div className={s.range}>
+                           <span className={s.value}>от<span className={s.cost}>100 000</span></span>
+                        </div>
+                        <div className={s.range}>
+                           <span className={s.value}>до<span className={s.cost}>500 000</span></span>
+                        </div>
+                     </div>
                </Typography>
             </AccordionDetails>
          </Accordion>
 
-{/*Сюда мы добавим компоненту в которой будет отображаться
-мощность, мощность двигателя и макс скорость чтобы не разбивать на 2 отдельных аккордиона */}
+         {/*Сюда мы добавим компоненту в которой будет отображаться
+         мощность, мощность двигателя и макс скорость чтобы не разбивать на 2 отдельных аккордиона */}
 
          <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
