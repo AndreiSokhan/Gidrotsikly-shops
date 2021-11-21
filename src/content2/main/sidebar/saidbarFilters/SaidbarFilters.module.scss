@@ -1,10 +1,26 @@
 
-
-
-
-.availa {
+.categoriesWrap {
    display: flex;
-   justify-content: space-between;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.schoice {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 21%;
+}
+
+.catalogCheck {
+   padding: 4px !important;
+}
+
+.checkText {
+   font-family: 'SFProDisplayRegular', sans-serif;
+   font-size: 14px;
+   line-height: 17px;
+   color: #000000;
 }
 
 .price {
@@ -15,12 +31,13 @@
 
 .checkboxBrend {
    display: flex;
-   justify-content: space-between;
    flex-wrap: wrap;
+   margin-bottom: 18px;
+   justify-items: flex-start;
 }
 
 .modelInput {
-   font-family: SF Pro Display, sans-serif;
+   font-family: 'SF Pro Display', sans-serif;
    font-size: 12px;
    font-style: normal;
    font-weight: 400;
@@ -34,6 +51,41 @@
    border: 1px solid #E0E0E0;
 }
 
+.modelInput:focus, .modelInput:active{
+   outline: none;
+   color:black;
+}
+
 .modelBtn {
    display: none;
+}
+
+.modelBox {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   margin-bottom: 20px;
+   justify-items: flex-start;
+   margin-top: 20px;
+}
+
+.linkMore {
+   color: #1C62CD;
+   cursor: pointer;
+   text-decoration-line: underline;
+   font-family: 'SFProDisplayRegular', sans-serif;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 17px;
+}
+
+.countryWrap {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   justify-items: flex-start;
+}
+
+.choiceWrap {
+   display: flex;
 }
