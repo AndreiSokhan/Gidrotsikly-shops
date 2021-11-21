@@ -33,7 +33,7 @@ export default function SaidbarFilters(props) {
    return (
       <div>
 
-         <Accordion>
+         <Accordion className={s.accordion}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
                <Typography>Наличие</Typography>
             </AccordionSummary>
