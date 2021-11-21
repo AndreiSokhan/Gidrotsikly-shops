@@ -45,7 +45,6 @@ function Sorting() {
                </label>*/}
 
 
-
                <div>
                   <button>
                      <img className={s.img} src={img1} alt="" />

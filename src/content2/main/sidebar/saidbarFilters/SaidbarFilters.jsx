@@ -11,19 +11,20 @@ import s from './SaidbarFilters.module.scss';
 import CheckboxLabels from '../../../../components/common/CheckboxLabels/CheckboxLabels';
 import RadioButton from '../../../../components/common/radio-button/RadioButton';
 import PriceSlider from './../../../../components/common/price-slider/PriceSlider';
+import PowerFilters from './powerFilters/PowerFilters';
 
 
 // полный блок аккардиона с чекбоксом ссылкой и поиском
 
 
-export default function SaidbarFilters() {
+export default function SaidbarFilters(props) {
 
 
    //const data1 ={
-   //   link: "Options"
+   //   label: "в Наличии"
    //}
    //const data2 ={
-   //   link: "By-brand"
+   //   label: "Под заказ"
    //}
 
 
@@ -36,7 +37,10 @@ export default function SaidbarFilters() {
             </AccordionSummary>
             <AccordionDetails>
                <Typography>
-                  <CheckboxLabels/>
+                  <div className={s.availa}>
+                     <CheckboxLabels/>
+                     <CheckboxLabels/>
+                  </div>
                </Typography>
             </AccordionDetails>
          </Accordion>
@@ -69,6 +73,7 @@ export default function SaidbarFilters() {
             </AccordionDetails>
          </Accordion>
 
+         <PowerFilters/>
          {/*Сюда мы добавим компоненту в которой будет отображаться
          мощность, мощность двигателя и макс скорость чтобы не разбивать на 2 отдельных аккордиона */}
 
@@ -78,8 +83,12 @@ export default function SaidbarFilters() {
             </AccordionSummary>
             <AccordionDetails>
                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  <div className={s.checkboxBrend}>
+                     <CheckboxLabels/>
+                     <CheckboxLabels/>
+                     <CheckboxLabels/> 
+                  </div>
+                  
                </Typography>
             </AccordionDetails>
          </Accordion>
@@ -89,8 +98,14 @@ export default function SaidbarFilters() {
             </AccordionSummary>
             <AccordionDetails>
                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+               <form className={s.modelForm} action="">
+                  <input className={s.modelInput} type="search" placeholder="Введите модель"/>
+                  <button className={s.modelBtn} type="submit">искать</button>
+               </form>
+                  <CheckboxLabels/>
+                  <CheckboxLabels/>
+                  <CheckboxLabels/> 
+                  <CheckboxLabels/> 
                </Typography>
             </AccordionDetails>
          </Accordion>
@@ -111,8 +126,10 @@ export default function SaidbarFilters() {
             </AccordionSummary>
             <AccordionDetails>
                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  <CheckboxLabels/>
+                  <CheckboxLabels/>
+                  <CheckboxLabels/> 
+                  <CheckboxLabels/> 
                </Typography>
             </AccordionDetails>
          </Accordion>
