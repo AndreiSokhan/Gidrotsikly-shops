@@ -9,7 +9,7 @@ import Checkbox from '@mui/material/Checkbox';
 export default function CheckboxLabels() {
     return (
         <FormGroup>
-            <FormControlLabel control={<Checkbox />} label="Сюда значение" />
+            <FormControlLabel control={<Checkbox />} label style={{marginRight:0}} />
         </FormGroup>
     );
 }
