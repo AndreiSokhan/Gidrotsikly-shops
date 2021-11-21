@@ -12,6 +12,8 @@ import CheckboxLabels from '../../../../components/common/CheckboxLabels/Checkbo
 import RadioButton from '../../../../components/common/radio-button/RadioButton';
 import PriceSlider from './../../../../components/common/price-slider/PriceSlider';
 import PowerFilters from './powerFilters/PowerFilters';
+import StockButton from './../../../../components/common/stock-button/StockButton';
+
 
 
 // полный блок аккардиона с чекбоксом ссылкой и поиском
@@ -115,8 +117,9 @@ export default function SaidbarFilters(props) {
             </AccordionSummary>
             <AccordionDetails>
                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+
+                  <StockButton/>
+
                </Typography>
             </AccordionDetails>
          </Accordion>

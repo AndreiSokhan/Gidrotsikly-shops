@@ -7,7 +7,7 @@ import FormLabel from '@mui/material/FormLabel';
 
 export default function RadioButton() {
    return (
-      <FormControl component="fieldset">
+      <FormControl component="fieldset" >
       {/*<FormLabel component="legend"></FormLabel>*/}
          <RadioGroup row aria-label="gender" name="row-radio-buttons-group">
             <FormControlLabel value="female" control={<Radio />} label="Все" />
