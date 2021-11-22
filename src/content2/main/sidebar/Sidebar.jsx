@@ -1,9 +1,7 @@
 import s from './Sidebar.module.scss';
-//import CheckboxLabels from '../../../components/common/CheckboxLabels/CheckboxLabels';
 import { NavLink } from "react-router-dom";
-//import { Accordion } from '@mui/material';
 import SaidbarFilters from './saidbarFilters/SaidbarFilters';
-import GreyButton from './../../../components/common/grey-button/GreyButton';
+import SidebarBottom from './sidebarBottom/SidebarBottom';
 
 
 // блок с фильтрами на второй странице нашего проекта
@@ -26,7 +24,7 @@ function Sidebar() {
             <li className={s.item}><NavLink className={s.link} to={data2.link}>По марке</NavLink></li>
          </ul>
          <SaidbarFilters/>
-         <GreyButton/>
+         <SidebarBottom/>
       </div>
 
    )

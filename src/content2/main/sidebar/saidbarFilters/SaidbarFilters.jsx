@@ -115,7 +115,7 @@ export default function SaidbarFilters(props) {
                   <div className={s.checkboxBrend}>
                      <div className={s.schoice} style={{marginRight: 91}}>
                         <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>BRP</p>
+                        <span className={s.checkText}>BRP</span>
                      </div>
 
                      <div className={s.schoice}>
@@ -146,6 +146,8 @@ export default function SaidbarFilters(props) {
                   </form>
 
                   <div className={s.modelBox}>
+
+                     {/*<Component title="...">*/}
 
                      <div className={s.schoice}>
                         <CheckboxLabels className={s.catalogCheck} />
