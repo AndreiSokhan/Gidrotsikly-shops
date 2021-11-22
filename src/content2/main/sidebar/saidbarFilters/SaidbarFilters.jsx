@@ -8,12 +8,11 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import s from './SaidbarFilters.module.scss';
 //ниже импорты компонент
-import CheckboxLabels from '../../../../components/common/CheckboxLabels/CheckboxLabels';
 import RadioButton from '../../../../components/common/radio-button/RadioButton';
 import PriceSlider from './../../../../components/common/price-slider/PriceSlider';
 import PowerFilters from './powerFilters/PowerFilters';
 import StockButton from './../../../../components/common/stock-button/StockButton';
-
+import CheckboxLabel from '../../../../components/common/CheckboxLabel/CheckboxLabel';
 
 
 // полный блок аккардиона с чекбоксом ссылкой и поиском
@@ -39,18 +38,16 @@ export default function SaidbarFilters(props) {
             </AccordionSummary>
 
             <AccordionDetails>
-               <div className={s.categoriesWrap}>
-                  <div className={s.schoice} style={{ marginRight: 52 }}>
-                     <CheckboxLabels className={s.catalogCheck} />
-                     <p className={s.checkText}>В наличие</p>
-                  </div>
 
-                  <div className={s.schoice}>
-                     <CheckboxLabels className={s.catalogCheck} />
-                     <p className={s.checkText}>Под заказ</p>
+               <div className={s.categoriesWrap}>
+                  <div style={{ marginRight: "29px" }}>
+                     <CheckboxLabel label="В наличие"  />
                   </div>
+                  <CheckboxLabel label="Под заказ" />
                </div>
+
             </AccordionDetails>
+
          </Accordion>
 
          <Accordion>
@@ -61,24 +58,23 @@ export default function SaidbarFilters(props) {
                <Typography>
 
                   <div className={s.choiceWrap}>
+
                      <div className={s.schoice} style={{ marginRight: 19 }}>
-                        <RadioButton className={s.catalogRadio}/> 
+                        <RadioButton className={s.catalogRadio} />
                         <p className={s.checkText}>Все</p>
                      </div>
 
                      <div className={s.schoice} style={{ marginRight: 19 }}>
-                        <RadioButton className={s.catalogRadio}/>
+                        <RadioButton className={s.catalogRadio} />
                         <p className={s.checkText}>Новинки</p>
                      </div>
 
                      <div className={s.schoice}>
-                        <RadioButton className={s.catalogRadio}/>
+                        <RadioButton className={s.catalogRadio} />
                         <p className={s.checkText}>Акции</p>
                      </div>
+
                   </div>
-
-
-                  
                </Typography>
             </AccordionDetails>
          </Accordion>
@@ -113,22 +109,12 @@ export default function SaidbarFilters(props) {
                <Typography>
 
                   <div className={s.checkboxBrend}>
-                     <div className={s.schoice} style={{marginRight: 91}}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>BRP</p>
+                     <div style={{ marginRight: "91px" }}>
+                        <CheckboxLabel label="BRP"  />
                      </div>
-
-                     <div className={s.schoice}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>Spark 2</p>
-                     </div>
-
-                     <div className={s.schoice}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>Spark 3</p>
-                     </div>
+                        <CheckboxLabel label="Spark 2" />
+                        <CheckboxLabel label="Spark 3" />
                   </div>
-
                   <NavLink className={s.linkMore} to="">Показать еще</NavLink>
 
                </Typography>
@@ -146,26 +132,10 @@ export default function SaidbarFilters(props) {
                   </form>
 
                   <div className={s.modelBox}>
-
-                     <div className={s.schoice}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>Sea-doo Spark 2</p>
-                     </div>
-
-                     <div className={s.schoice}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>SeaDoo GTI 155</p>
-                     </div>
-
-                     <div className={s.schoice}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>SeaDoo Spark 90</p>
-                     </div>
-
-                     <div className={s.schoice}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>SeaDoo GTR 230</p>
-                     </div>
+                     <CheckboxLabel label="Sea-doo Spark 2" />
+                     <CheckboxLabel label="SeaDoo GTI 155" />
+                     <CheckboxLabel label="SeaDoo Spark 90" />
+                     <CheckboxLabel label="SeaDoo GTR 230" />
                   </div>
 
                   <NavLink className={s.linkMore} to="">Показать еще</NavLink>
@@ -180,7 +150,7 @@ export default function SaidbarFilters(props) {
             <AccordionDetails>
                <Typography>
 
-                  <StockButton/>
+                  <StockButton />
 
                </Typography>
             </AccordionDetails>
@@ -191,28 +161,14 @@ export default function SaidbarFilters(props) {
             </AccordionSummary>
             <AccordionDetails>
                <Typography>
+
                   <div className={s.countryWrap}>
-                     <div className={s.schoice}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>Россия</p>
-                     </div>
-
-                     <div className={s.schoice}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>Китай</p>
-                     </div>
-
-                     <div className={s.schoice}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>Германия</p>
-                     </div>
-
-                     <div className={s.schoice}>
-                        <CheckboxLabels className={s.catalogCheck} />
-                        <p className={s.checkText}>CША</p>
-                     </div>
-
+                     <CheckboxLabel label="Россия" />
+                     <CheckboxLabel label="Германия" />
+                     <CheckboxLabel label="Китай" />
+                     <CheckboxLabel label="США" />
                   </div>
+
                   <NavLink className={s.linkMore} to="">Показать еще</NavLink>
                </Typography>
             </AccordionDetails>
