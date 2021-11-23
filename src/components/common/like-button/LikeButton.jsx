@@ -11,5 +11,4 @@ function LikeButton () {
         <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
     )
 }
-
     export default LikeButton;

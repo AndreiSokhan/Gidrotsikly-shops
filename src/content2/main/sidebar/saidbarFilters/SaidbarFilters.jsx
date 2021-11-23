@@ -1,9 +1,11 @@
 //import s from './Accordion.module.scss';
 import { NavLink } from "react-router-dom";
-import * as React from 'react';
+// import { styled } from '@mui/material/styles';
 import Accordion from '@mui/material/Accordion';
+import * as React from 'react';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
+// import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import s from './SaidbarFilters.module.scss';
@@ -41,7 +43,7 @@ export default function SaidbarFilters(props) {
 
                <div className={s.categoriesWrap}>
                   <div style={{ marginRight: "29px" }}>
-                     <CheckboxLabel label="В наличие"  />
+                     <CheckboxLabel label="В наличие" />
                   </div>
                   <CheckboxLabel label="Под заказ" />
                </div>
@@ -110,10 +112,10 @@ export default function SaidbarFilters(props) {
 
                   <div className={s.checkboxBrend}>
                      <div style={{ marginRight: "91px" }}>
-                        <CheckboxLabel label="BRP"  />
+                        <CheckboxLabel label="BRP" />
                      </div>
-                        <CheckboxLabel label="Spark 2" />
-                        <CheckboxLabel label="Spark 3" />
+                     <CheckboxLabel label="Spark 2" />
+                     <CheckboxLabel label="Spark 3" />
                   </div>
                   <NavLink className={s.linkMore} to="">Показать еще</NavLink>
 
