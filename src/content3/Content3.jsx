@@ -13,11 +13,9 @@ function Content3(props) {
     return (
         <div className={s.content}>
             <div className={s.container}>
-
-            <About/>
-            <CardsPopular/>
             <BreadCrumbs/>
             <ProductDesc/>
+            <About/>
             <CardsPopular title="Популярные товары"/>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import s from "./About.module.scss";
+import AboutShop from "./aboutShop/AboutShop";
 import AboutTop from "./aboutTop/AboutTop";
 
 
@@ -31,6 +32,7 @@ function About(props) {
    return (
       <div className={s.about}>
          <AboutTop data1={data1} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6} data7={data7}/>
+         <AboutShop/>
       </div>
    );
 }

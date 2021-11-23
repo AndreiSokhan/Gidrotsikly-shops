@@ -34,12 +34,14 @@
    height: 30px;
    padding-left: 20px;
    border: 1px solid #E0E0E0;
+
+   :focus, .modelInput:active{
+      outline: none;
+      color:black;
+   }
 }
 
-.modelInput:focus, .modelInput:active{
-   outline: none;
-   color:black;
-}
+
 
 .modelBtn {
    display: none;

@@ -4,11 +4,12 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   margin-bottom: 50px;
 }
 
 .link {
    color: #2F3035;
-   opacity: 60%;
+   opacity: 0.6;
 }
 
 .item {
@@ -22,11 +23,11 @@
 
    &:hover  {
       font-weight: 600;
-      opacity: 100%;
+      //opacity: 1;
    }
 
    &.active {
       border-bottom: 2px solid #1C62CD;
-      opacity: 100%;
+      opacity: 1;
    }
 }
