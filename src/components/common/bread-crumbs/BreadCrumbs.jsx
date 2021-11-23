@@ -15,6 +15,8 @@ export default function CustomSeparator() {
     const breadcrumbs = [
     <Link underline="hover" key="1" color="#C4C4C4" href="#" onClick={handleClick}>Главная</Link>,
     <Typography key="2" color="#C4C4C4">Гидроциклы</Typography>,
+    <Typography key="3" color="#C4C4C4">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</Typography>
+    
 ];
 
 return (

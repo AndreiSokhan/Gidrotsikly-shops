@@ -1,0 +1,54 @@
+.productBox {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    position: relative;
+}
+
+.oldCost {
+font-family: 'Barlow', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 36px;
+color: #000000;
+opacity: 0.6;
+margin-bottom: 5px;
+position: relative;
+}
+
+    .oldCost::after  {
+        content: "";
+        background-image: url('../../assets/image/Content3/Product/line.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        width:132px;
+        height:21px;
+        top: 7px;
+        left: 4px;
+    }
+
+.newCost {
+font-family: 'Barlow',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 48px;
+color: #2F3035;
+margin-bottom: 17px;
+}
+
+.link {
+font-family: 'SF Pro Display',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+color: #1C62CD;
+}
+
+// .productBox label {
+//     padding: 13px 24px 13px 24px !important;
+// }
