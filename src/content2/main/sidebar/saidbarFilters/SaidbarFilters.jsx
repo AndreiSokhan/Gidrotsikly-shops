@@ -22,15 +22,6 @@ import CheckboxLabel from '../../../../components/common/CheckboxLabel/CheckboxL
 
 export default function SaidbarFilters(props) {
 
-
-   //const data1 ={
-   //   label: "в Наличии"
-   //}
-   //const data2 ={
-   //   label: "Под заказ"
-   //}
-
-
    return (
       <div>
 
@@ -89,10 +80,10 @@ export default function SaidbarFilters(props) {
                   <PriceSlider />
                   <div className={s.price}>
                      <div className={s.range}>
-                        <span className={s.value}>от<span className={s.cost}>100 000</span></span>
+                        <span className={s.value}>от <span className={s.cost}> 100 000</span></span>
                      </div>
                      <div className={s.range}>
-                        <span className={s.value}>до<span className={s.cost}>500 000</span></span>
+                        <span className={s.value}>до <span className={s.cost}> 500 000</span></span>
                      </div>
                   </div>
                </Typography>
@@ -151,9 +142,7 @@ export default function SaidbarFilters(props) {
             </AccordionSummary>
             <AccordionDetails>
                <Typography>
-
                   <StockButton />
-
                </Typography>
             </AccordionDetails>
          </Accordion>

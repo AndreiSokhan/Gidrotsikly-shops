@@ -6,7 +6,7 @@ import s from './PriceSlider.module.scss';
 
 
 function valuetext(value) {
-   return `${value}°C`;
+   return `${value}$`;
 }
 
 export default function PriceSlider() {
@@ -20,7 +20,7 @@ export default function PriceSlider() {
       <Box sx={{ width: 290 }}>
       <Slider
          size="small"
-         getAriaLabel={() => 'Temperature range'}
+         getAriaLabel={() => 'Price range'}
          value={value}
          onChange={handleChange}
          valueLabelDisplay="auto"

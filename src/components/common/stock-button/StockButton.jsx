@@ -2,6 +2,9 @@ import s from './StockButton.module.scss';
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import { styled } from '@mui/system';
+
+
 
 export default function StockButton() {
    return (
