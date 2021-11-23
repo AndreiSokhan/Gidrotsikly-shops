@@ -1,4 +1,37 @@
 .ProductDesc {
     margin-bottom: 80px;
     margin-top: 45px;
+    display: grid;
+    grid-template-columns: 500px 570px;
+    gap: 100px;
+    grid-template-rows: 1fr;
+}
+
+.title {
+
+font-family: 'SF Pro Display',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 36px;
+color: #2F3035;
+margin: 0;
+margin-bottom: 10px;
+}
+
+.productCode {
+font-family: 'SF Pro Display', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+color: #2F3035;
+opacity: 0.6;
+}
+
+.ratingGroup {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
 }

@@ -2,7 +2,7 @@ import s from './Product.module.scss';
 import { NavLink } from "react-router-dom";
 import Label from '../../components/common/Label/Label';
 
-//компонента для левой части ProductDesc (картинка, цена)
+//компонента для части ProductDesc (картинка, цена)
 
 
 function Product(props) {
