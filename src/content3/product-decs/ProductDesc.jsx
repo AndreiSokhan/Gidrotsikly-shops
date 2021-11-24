@@ -7,9 +7,8 @@ import icon from '../../assets/image/Content3/Product/statisticIcon.svg';
 import StarIcon from '@mui/icons-material/Star';
 import Rating from '@mui/material/Rating';
 import { styled } from '@mui/material/styles';
-// import Tabs from '@mui/material/Tabs';
-// import Tab from '@mui/material/Tab';
-
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
 //компонента для описания карточки (фото, цена, хар-ка)
 
@@ -25,6 +24,31 @@ const MyRating = styled(Rating)({
     }
 });
 
+const MyTabs = styled(Tabs)({
+    
+        
+    '& .MuiTab-root': {
+        fontFamily:'SFProDisplayRegular',
+                fontSize: 20,
+                fontWeight:400,
+                textTransform: 'none',
+                paddingLeft:'0',
+                opacity: 0.6,
+    }
+    ,
+        '& .Mui-selected': {
+            fontFamily:'SFProDisplayBold',
+            fontWeight:700,
+            fontSize: 20,
+            textTransform: 'none',
+            color:'#2F3035',
+            paddingLeft:'0',
+            opacity: 1,
+        }
+,
+});
+
+
 function ProductDesc() {
 
     const data1 = {
@@ -35,8 +59,13 @@ function ProductDesc() {
 
     const data2 = {
         title: "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
-        span: "Код товара:366666-2"
+        code: "366666-2"
     }
+
+    const [value, setValue] = React.useState(0);
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
 
 
     return (
@@ -46,11 +75,12 @@ function ProductDesc() {
 
             <div className={s.ProductInfo}>
                 <h3 className={s.title}>{data2.title}</h3>
-                <span className={s.productCode}>{data2.span}</span>
+                <span className={s.productCode}>Код товара:</span>
+                <span className={s.productCode}>{data2.code}</span>
 
 
                 <div className={s.ratingGroup}>
-                    <LikeButton />
+                    <LikeButton style={{ padding: '0' }} />
                     <img src={icon} alt="icon" />
                     <MyRating
                         readOnly
@@ -58,6 +88,17 @@ function ProductDesc() {
                         emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
                     />
                 </div>
+
+                <div className={s.productTab}>
+                        <MyTabs 
+                        value={value} 
+                        onChange={handleChange} 
+                        >
+                            <Tab label="Характеристика" />
+                            <Tab label="Наличие в магазине" />
+                        </MyTabs>
+                </div>
+
 
 
             </div>

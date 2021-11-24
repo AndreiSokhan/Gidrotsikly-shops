@@ -1,4 +1,4 @@
-import s from './Checkbox.module.scss';
+// import s from './Checkbox.module.scss';
 import * as React from 'react';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';

@@ -1,5 +1,4 @@
 import s from './CardsCatalog.module.scss';
-
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'

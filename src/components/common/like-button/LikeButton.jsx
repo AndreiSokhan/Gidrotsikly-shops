@@ -6,10 +6,11 @@ import Favorite from '@mui/icons-material/Favorite';
 
 //кнопка в форме сердца для выбора товара
 
-function LikeButton () {
+function LikeButton (props) {
 
     return (
-        <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite/>}/>
+        <Checkbox style={props.style} icon={<FavoriteBorder />} checkedIcon={<Favorite/>}
+        />
     )
 }
     export default LikeButton;

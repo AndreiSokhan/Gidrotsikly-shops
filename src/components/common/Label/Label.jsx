@@ -6,7 +6,7 @@ import s from './Label.module.scss';
 function Label (props) {
 
     return (
-        <div className={s.Label}>
+        <div className={s.Label} style={props.style}>
             {props.label}
         </div>
     );
