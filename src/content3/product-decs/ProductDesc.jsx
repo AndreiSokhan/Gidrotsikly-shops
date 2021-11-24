@@ -25,31 +25,35 @@ const MyRating = styled(Rating)({
 });
 
 const MyTabs = styled(Tabs)({
-    
-        
+
+
     '& .MuiTab-root': {
-        fontFamily:'SFProDisplayRegular',
-                fontSize: 20,
-                fontWeight:400,
-                textTransform: 'none',
-                paddingLeft:'0',
-                opacity: 0.6,
+        fontFamily: 'SFProDisplayRegular',
+        fontSize: 20,
+        fontWeight: 400,
+        textTransform: 'none',
+        paddingLeft: '20px',
+        opacity: 0.6,
     }
     ,
-        '& .Mui-selected': {
-            fontFamily:'SFProDisplayBold',
-            fontWeight:700,
-            fontSize: 20,
-            textTransform: 'none',
-            color:'#2F3035',
-            paddingLeft:'0',
-            opacity: 1,
-        }
-,
+    '& .Mui-selected': {
+        fontFamily: 'SFProDisplayBold',
+        fontWeight: 700,
+        fontSize: 20,
+        textTransform: 'none',
+        color: '#2F3035',
+        paddingLeft: '0',
+        opacity: 1,
+        '& .MuiTabs-indicatorSpan': {
+
+        },
+    }
+    ,
+
 });
 
 
-function ProductDesc() {
+function ProductDesc(props) {
 
     const data1 = {
         img: img1,
@@ -60,6 +64,14 @@ function ProductDesc() {
     const data2 = {
         title: "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
         code: "366666-2"
+    }
+
+    const data3 = {
+        country: "Канада",
+        numberOfSeats: "3",
+        power: "155",
+        engineType: "Бензиновый",
+        yearOfIssue: "2018"
     }
 
     const [value, setValue] = React.useState(0);
@@ -90,20 +102,58 @@ function ProductDesc() {
                 </div>
 
                 <div className={s.productTab}>
-                        <MyTabs 
-                        value={value} 
-                        onChange={handleChange} 
-                        >
-                            <Tab label="Характеристика" />
-                            <Tab label="Наличие в магазине" />
-                        </MyTabs>
+                    <MyTabs
+                        value={value}
+                        onChange={handleChange}
+                    >
+                        <Tab label="Характеристика" />
+                        <Tab label="Наличие в магазине" />
+                    </MyTabs>
                 </div>
 
+                <div className={s.table}>
+                    
+                        <div className={s.tableRow}>
+                            <span className={s.tableName}>Производитель</span>
+                        </div>
+                        <div className={s.tableRow}>
+                            <span className={s.tableValue}>{data3.country}</span>
+                        </div>
 
+                        <div className={s.tableRow}>
+                            <span className={s.tableName}>Количество мест, шт: </span>
+                        </div>
+                        <div className={s.tableRow}>
+                            <span className={s.tableValue}>{data3.numberOfSeats}</span>
+                        </div>
+
+                        <div className={s.tableRow}>
+                            <span className={s.tableName}>Мощность, л.с.</span>
+                        </div>
+                        <div className={s.tableRow}>
+                            <span className={s.tableValue}>{data3.power}</span>
+                        </div>
+
+                        <div className={s.tableRow}>
+                            <span className={s.tableName}>Тип двигателя</span>
+                        </div>
+                        <div className={s.tableRow}>
+                            <span className={s.tableValue}>{data3.engineType}</span>
+                        </div>
+
+                        <div className={s.tableRow}>
+                            <span className={s.tableName}>Год выпуска</span>
+                        </div>
+                        <div className={s.tableRow}>
+                            <span className={s.tableValue}>{data3.yearOfIssue}</span>
+                        </div>
+
+
+                </div>
 
             </div>
 
-
+            
 
 
 

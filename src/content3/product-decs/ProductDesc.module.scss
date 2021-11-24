@@ -39,3 +39,30 @@ opacity: 0.6;
 .productTab {
     margin-top: 50px;
 }
+
+.table{
+    display: grid;
+    grid-template-columns: 281px 125px;
+    margin-bottom: 20px;
+}
+
+.tableRow{
+    height: 45px;
+    border-bottom: 1px solid rgba(047,048,053, .1);
+    color:#2F3035;
+    font-family: 'SFProDisplayRegular';
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items:flex-end;
+}
+
+// .infoProductMoreLink{
+//     color:#1C62CD;
+//     font-family: 'SFProDisplayRegular';
+//     font-weight: 400;
+//     font-size: 14px;
+//     text-decoration-line:underline;
+//     -moz-text-decoration-line:underline;
+//     margin-bottom: 45px;
+// }
