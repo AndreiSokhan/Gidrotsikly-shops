@@ -9,6 +9,7 @@ import Rating from '@mui/material/Rating';
 import { styled } from '@mui/material/styles';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import { NavLink } from 'react-router-dom';
 
 //компонента для описания карточки (фото, цена, хар-ка)
 
@@ -25,7 +26,6 @@ const MyRating = styled(Rating)({
 });
 
 const MyTabs = styled(Tabs)({
-
 
     '& .MuiTab-root': {
         fontFamily: 'SFProDisplayRegular',
@@ -111,44 +111,41 @@ function ProductDesc(props) {
                     </MyTabs>
                 </div>
 
-                <div className={s.table}>
+                <table className={s.table}>
                     
-                        <div className={s.tableRow}>
-                            <span className={s.tableName}>Производитель</span>
-                        </div>
-                        <div className={s.tableRow}>
-                            <span className={s.tableValue}>{data3.country}</span>
-                        </div>
+                        <tr className={s.tableRow} >
+                            <td className={s.tableName}>Производитель</td>
+                            <td className={s.tableValue}>{data3.country}</td>
+                        </tr>
+                    
 
-                        <div className={s.tableRow}>
-                            <span className={s.tableName}>Количество мест, шт: </span>
-                        </div>
-                        <div className={s.tableRow}>
-                            <span className={s.tableValue}>{data3.numberOfSeats}</span>
-                        </div>
+                        <tr className={s.tableRow}>
+                            <td className={s.tableName}>Количество мест, шт: </td>
+                            <td className={s.tableValue}>{data3.numberOfSeats}</td>
+                        </tr>
+                    
 
-                        <div className={s.tableRow}>
-                            <span className={s.tableName}>Мощность, л.с.</span>
-                        </div>
-                        <div className={s.tableRow}>
-                            <span className={s.tableValue}>{data3.power}</span>
-                        </div>
+                        <tr className={s.tableRow}>
+                            <td className={s.tableName}>Мощность, л.с.</td>
+                            <td className={s.tableValue}>{data3.power}</td>
+                        </tr>
+                    
 
-                        <div className={s.tableRow}>
-                            <span className={s.tableName}>Тип двигателя</span>
-                        </div>
-                        <div className={s.tableRow}>
-                            <span className={s.tableValue}>{data3.engineType}</span>
-                        </div>
+                        <tr className={s.tableRow}>
+                            <td className={s.tableName}>Тип двигателя</td>
+                            <td className={s.tableValue}>{data3.engineType}</td>
+                        </tr>
+                    
+                        <tr className={s.tableRow}>
+                            <td className={s.tableName}>Год выпуска</td>
+                            <td className={s.tableValue}>{data3.yearOfIssue}</td>
+                        </tr>
+                    
+                </table>
 
-                        <div className={s.tableRow}>
-                            <span className={s.tableName}>Год выпуска</span>
-                        </div>
-                        <div className={s.tableRow}>
-                            <span className={s.tableValue}>{data3.yearOfIssue}</span>
-                        </div>
-
-
+                <div className={s.links}>
+                            <NavLink className={s.infoProductMoreLink} to="">Показать еще</NavLink>
+                            <button className={s.infoProductBtn}>купить</button>
                 </div>
 
             </div>
