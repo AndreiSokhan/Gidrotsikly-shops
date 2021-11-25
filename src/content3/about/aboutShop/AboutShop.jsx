@@ -11,7 +11,7 @@ function AboutShop(props) {
          <div className={s.shopWrap}>
             <span className={s.shop}>Магазин</span>
             <form className={s.shopForm} action="">
-               <input className={s.shopInput} type="search" placeholder="|" />
+               <input className={s.shopInput} type="text" placeholder="|" />
                <button className={s.shopBtn} type="submit"><img src={search} alt="serch" /></button>
             </form>
          </div>

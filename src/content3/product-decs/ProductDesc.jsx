@@ -47,8 +47,7 @@ const MyTabs = styled(Tabs)({
         '& .MuiTabs-indicatorSpan': {
 
         },
-    }
-    ,
+    },
 
 });
 
@@ -147,21 +146,10 @@ function ProductDesc(props) {
                         <div className={s.tableRow}>
                             <span className={s.tableValue}>{data3.yearOfIssue}</span>
                         </div>
-
-
                 </div>
-
             </div>
-
-            
-
-
-
-
         </div>
-
     );
 }
-
 
 export default ProductDesc;
