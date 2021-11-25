@@ -58,6 +58,7 @@ opacity: 0.6;
     font-family: 'SFProDisplayRegular';
     font-weight: 400;
     font-size: 20px;
+    border-bottom: 1px solid rgba(47, 48, 53, .1);
 }
 
 .links {
@@ -94,7 +95,10 @@ opacity: 0.6;
     cursor: pointer;
 }
 
-td {
-    border-bottom: 1px solid rgba(47, 48, 53, .1);
-    
+// td {
+//     border-bottom: 1px solid rgba(47, 48, 53, .1);
+// }
+
+table {
+    border: none;
 }
