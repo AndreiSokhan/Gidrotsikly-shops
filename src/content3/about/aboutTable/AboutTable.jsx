@@ -7,7 +7,7 @@ function AboutTable() {
 
       return (
       <>
-         <table className={s.aboutTable}>
+         <table className={s.aboutTable} cellspacing="0">
             <tr className={s.rowTitle}>
                <td className={s.address}>Адрес</td>
                <td className={s.working}>Режим работы</td>

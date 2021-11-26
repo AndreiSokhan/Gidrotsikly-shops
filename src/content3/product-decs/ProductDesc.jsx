@@ -41,12 +41,9 @@ const MyTabs = styled(Tabs)({
         fontWeight: 700,
         fontSize: 20,
         textTransform: 'none',
-        color: '#2F3035',
+        color: '#2F3035 !important',
         paddingLeft: '0',
         opacity: 1,
-        '& .MuiTabs-indicatorSpan': {
-
-        },
     },
 
 });
@@ -110,7 +107,7 @@ function ProductDesc(props) {
                     </MyTabs>
                 </div>
 
-                <table className={s.table}>
+                <table className={s.table} cellspacing="0">
                     
                         <tr className={s.tableRow} >
                             <td className={s.tableName}>Производитель</td>

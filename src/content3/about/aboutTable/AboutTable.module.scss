@@ -6,7 +6,7 @@
 
 .rowTitle {
    height: 90px;
-   font-family: SF Pro Display, sans-serif;
+   font-family: 'SF Pro Display', sans-serif;
    font-size: 20px;
    font-style: normal;
    font-weight: 400;
@@ -27,7 +27,7 @@
    letter-spacing: 0em;
    text-align: left;
    color: #2F3035;
-   border-bottom: 1px solid #2F3035;
+   // border-bottom: 1px solid #2F3035;
 }
 
 .address {
@@ -49,13 +49,13 @@
 .button {
    width: 140px;
    padding-top: 20px;
-   border-bottom: 1px solid #9ea1ad;
+   // border-bottom: 1px solid #9ea1ad;
 }
 
 .cell {
    padding-top: 20px;
    opacity: 0.7;
-   border-bottom: 1px solid #9ea1ad;
+   // border-bottom: 1px solid #9ea1ad;
 }
 
 .workingHours {
@@ -71,4 +71,8 @@
 .time {
    display: flex;
    flex-direction: column;
+}
+
+td {
+   border-bottom: 1px solid rgba(47, 48, 53, .1);
 }
