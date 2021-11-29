@@ -2,7 +2,7 @@
    margin: 0 auto;
    background-color: #F0F0F4;
    max-width: 1171px;
-   // height: 54px;
+   height: 56px;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -22,9 +22,11 @@
    text-align: left;
    position: relative;
    padding: 15px 0 15px 0;
+   transition: text-shadow .3s;
 
    &:hover  {
-      font-weight: 600;
+      // font-weight: 600;
+      text-shadow: 0 0 .65px #2F3035, 0 0 .65px #2F3035;
       border-bottom: 2px solid #1C62CD;
    }
 
