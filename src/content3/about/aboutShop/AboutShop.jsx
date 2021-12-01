@@ -1,6 +1,7 @@
 import s from "./AboutShop.module.scss";
-import CheckboxLabel from '../../../components/common/CheckboxLabel/CheckboxLabel';
-import search from '../../image/Search.svg'
+// import CheckboxLabel from '../../../components/common/CheckboxLabel/CheckboxLabel';
+import search from '../../image/Search.svg';
+import RadioButtonMain from '../../../components/common/RadioButtonMain/RadioButtonMain'
 
 
 
@@ -15,12 +16,11 @@ function AboutShop(props) {
                <button className={s.shopBtn} type="submit"><img src={search} alt="serch" /></button>
             </form>
          </div>
+         
          <div className={s.shopCheckWrap}>
-            <div style={{ marginRight: "54px" }}>
-               <CheckboxLabel label="Забрать сегодня" />
-            </div>
-               <CheckboxLabel label="Забрать в течение недели" />
-            </div>
+            <RadioButtonMain/>
+         </div>
+         
       </div>
    );
 }
