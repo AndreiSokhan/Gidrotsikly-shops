@@ -1,11 +1,14 @@
 //import s from './Accordion.module.scss';
-import { NavLink } from "react-router-dom";
-// import { styled } from '@mui/material/styles';
-import Accordion from '@mui/material/Accordion';
 import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import MuiAccordion from '@mui/material/Accordion';
+import MuiAccordionSummary from '@mui/material/AccordionSummary';
+import MuiAccordionDetails from '@mui/material/AccordionDetails';
+import { NavLink } from "react-router-dom";
+import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-// import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import s from './SaidbarFilters.module.scss';
@@ -19,18 +22,90 @@ import CheckboxLabel from '../../../../components/common/CheckboxLabel/CheckboxL
 
 // полный блок аккардиона с чекбоксом ссылкой и поиском
 
+const MyAccordion = styled((props) => (
+   <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+   border: `1px solid ${theme.palette.divider}`,
+   '&:not(:last-child)': {
+      border: 0,
+   },
+}));
+
+
+const MyAccordionSummary = styled((props) => (
+   <MuiAccordionSummary
+      expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+      {...props}
+
+   />
+))(({ theme }) => ({
+
+   flexDirection: 'row-reverse',
+   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+      transform: 'rotate(270deg)',
+
+   },
+   '& .MuiAccordionSummary-content': {
+      marginLeft: theme.spacing(1),
+   },
+   '&.Mui-focused hover': {
+      borderColor: '#007AFF'
+   },
+}));
+
+
+const MyAccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+   padding: theme.spacing(1),
+
+
+}));
+
+
+const BottomAccordion = styled((props) => (
+   <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+
+}));
+
+const BottomAccordionSummary = styled((props) => (
+   <MuiAccordionSummary
+      expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+      {...props}
+
+   />
+))(({ theme }) => ({
+
+
+   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+      transform: 'rotate(270deg)',
+
+   },
+   '& .MuiAccordionSummary-content': {
+      marginLeft: theme.spacing(1),
+   },
+   '&.Mui-focused hover': {
+      borderColor: '#007AFF'
+   },
+}));
+
+
+const BottomAccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+   padding: theme.spacing(1),
+}));
+
+
 
 export default function SaidbarFilters(props) {
 
    return (
       <div>
 
-         <Accordion className={s.accordion}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+         <MyAccordion className={s.accordion}>
+            <MyAccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
                <Typography>Наличие</Typography>
-            </AccordionSummary>
+            </MyAccordionSummary>
 
-            <AccordionDetails>
+            <MyAccordionDetails>
 
                <div className={s.categoriesWrap}>
                   <div style={{ marginRight: "29px" }}>
@@ -39,15 +114,15 @@ export default function SaidbarFilters(props) {
                   <CheckboxLabel label="Под заказ" />
                </div>
 
-            </AccordionDetails>
+            </MyAccordionDetails>
 
-         </Accordion>
+         </MyAccordion>
 
-         <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
+         <MyAccordion>
+            <MyAccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
                <Typography>Новинки</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+            </MyAccordionSummary>
+            <MyAccordionDetails>
                <Typography>
 
                   <div className={s.choiceWrap}>
@@ -69,13 +144,14 @@ export default function SaidbarFilters(props) {
 
                   </div>
                </Typography>
-            </AccordionDetails>
-         </Accordion>
-         <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
+            </MyAccordionDetails>
+         </MyAccordion>
+
+         <MyAccordion>
+            <MyAccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
                <Typography>Цена</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+            </MyAccordionSummary>
+            <MyAccordionDetails>
                <Typography>
                   <PriceSlider />
                   <div className={s.price}>
@@ -87,18 +163,18 @@ export default function SaidbarFilters(props) {
                      </div>
                   </div>
                </Typography>
-            </AccordionDetails>
-         </Accordion>
+            </MyAccordionDetails>
+         </MyAccordion>
 
          <PowerFilters />
          {/*Сюда мы добавим компоненту в которой будет отображаться
          мощность, мощность двигателя и макс скорость чтобы не разбивать на 2 отдельных аккордиона */}
 
-         <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
+         <MyAccordion>
+            <MyAccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
                <Typography>Бренд</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+            </MyAccordionSummary>
+            <MyAccordionDetails>
                <Typography>
 
                   <div className={s.checkboxBrend}>
@@ -111,13 +187,14 @@ export default function SaidbarFilters(props) {
                   <NavLink className={s.linkMore} to="">Показать еще</NavLink>
 
                </Typography>
-            </AccordionDetails>
-         </Accordion>
-         <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
+            </MyAccordionDetails>
+         </MyAccordion>
+
+         <MyAccordion>
+            <MyAccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
                <Typography>Модель</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+            </MyAccordionSummary>
+            <MyAccordionDetails>
                <Typography>
                   <form className={s.modelForm} action="">
                      <input className={s.modelInput} type="search" placeholder="Введите модель" />
@@ -134,23 +211,25 @@ export default function SaidbarFilters(props) {
                   <NavLink className={s.linkMore} to="">Показать еще</NavLink>
 
                </Typography>
-            </AccordionDetails>
-         </Accordion>
-         <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
+            </MyAccordionDetails>
+         </MyAccordion>
+
+         <MyAccordion>
+            <MyAccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
                <Typography>Акции</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+            </MyAccordionSummary>
+            <MyAccordionDetails>
                <Typography>
                   <StockButton />
                </Typography>
-            </AccordionDetails>
-         </Accordion>
-         <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
+            </MyAccordionDetails>
+         </MyAccordion>
+
+         <MyAccordion>
+            <MyAccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
                <Typography>Страна</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+            </MyAccordionSummary>
+            <MyAccordionDetails>
                <Typography>
 
                   <div className={s.countryWrap}>
@@ -162,8 +241,9 @@ export default function SaidbarFilters(props) {
 
                   <NavLink className={s.linkMore} to="">Показать еще</NavLink>
                </Typography>
-            </AccordionDetails>
-         </Accordion>
+            </MyAccordionDetails>
+         </MyAccordion>
+
       </div>
    );
 }
