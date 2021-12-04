@@ -26,7 +26,7 @@ const MyAccordion = styled((props) => (
    <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
    border: `1px solid ${theme.palette.divider}`,
-   '&:not(:last-child)': {
+   '&': {
       border: 0,
    },
 }));
